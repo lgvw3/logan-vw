@@ -7,7 +7,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background -z-10" />
             <div className="container px-4 py-32 mx-auto text-center">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
-                    Hi, I&apos;m Logan Van Wagoner, a full-stack engineer building{" "}
+                    Hi, I&apos;m <span className=" text-nowrap">Logan Van Wagoner</span>, a full-stack engineer building{" "}
                     <span className="text-primary">AI/ML systems</span> to solve real-world problems.
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

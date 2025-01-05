@@ -3,6 +3,7 @@ import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
@@ -10,6 +11,7 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { Brain, Car, DollarSignIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
+import { buttonVariants } from "./ui/button"
   
 const projects = [
     {
@@ -19,7 +21,8 @@ const projects = [
         technologies: ["Unity", "Python", "ML Agents", "PyTorch", "C#"],
         icon: Car,
         featured: true,
-        video: '/drive-vid.mov?height=300&width=400'
+        video: '/drive-vid.mov?height=300&width=400',
+        link: 'https://github.com/lgvw3/CarGOSPACE'
     },
     {
         title: "1st Q",
@@ -33,7 +36,7 @@ const projects = [
         title: "Profitability Tool",
         description: "Data pipelines, org trees, and advanced tools for branch profitability management for both branch and compnay leaders.",
         image: "/profitability-shot.png?height=200&width=300",
-        technologies: ["Nextjs", "Typescript", "Python", "3rd Party Integrations"],
+        technologies: ["Nextjs", "Typescript", "Python", "MongoDB", "Data Pipelines"],
         icon: DollarSignIcon
     },
 ]
@@ -105,6 +108,20 @@ export default function ProjectsSection() {
                                         }
                                     </div>
                                 </CardContent>
+                                {
+                                    project.link && (
+                                        <CardFooter>
+                                            <a 
+                                                className={buttonVariants({variant: 'link'})}
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Repo
+                                            </a>
+                                        </CardFooter>
+                                    )
+                                }
                             </Card>
                         ))
                     }
