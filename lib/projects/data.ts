@@ -51,5 +51,21 @@ export const projects: Project[] = [
     image: "/profitability-shot.png?height=600&width=800",
     //github: "https://github.com/lgvw3",
   },
+  {
+    id: "front-door",
+    title: "Front Door",
+    summary: "Onboarding, recruiting, training, all enabled from a single tool",
+    description: "We have been working to improve and bring a standard of excellence to our onboarding and training. This was in response to that desire. Now all of our new recruits move through the Front Door. It allows for discovery, creation of proformas, and soon contract management (currently it provides the details to HR who manages it other systems which is a bit of a pain). This makes the proformas and discovery conversations actually matter and be real data both parties can agree to and act on.",
+    technologies: ["Nextjs", "MongoDB", "Recharts", "Cron Jobs", "Sendgrid Tools"],
+    features: [
+      "Enabling of non-employees to have a safe access point, with limited abilities",
+      "Gives clear communication to recruiter and recruit as to current completion in the process and what remains and who you are working with next",
+      "Planning and reporting tools",
+      "Easy to understand dashboards",
+      "Improved accountability"
+    ],
+    image: "/front-door.png?height=600&width=800",
+    //github: "https://github.com/lgvw3",
+  },
 ]
 

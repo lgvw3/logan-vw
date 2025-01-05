@@ -9,7 +9,7 @@ import {
   } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import { Brain, Car, DollarSignIcon } from 'lucide-react'
+import { Brain, Car, DollarSignIcon, DoorOpenIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./ui/button"
 import Link from "next/link"
@@ -42,6 +42,14 @@ const projects = [
         technologies: ["Nextjs", "Typescript", "Python", "MongoDB", "Data Pipelines"],
         icon: DollarSignIcon,
         details: '/profitability-tool'
+    },
+    {
+        title: "Front Door",
+        description: "The recruiting and onboarding tool of our organization",
+        image: "/front-door.png?height=200&width=300",
+        technologies: ["Nextjs", "Typescript", "MongoDB", "Leadership Collaboration"],
+        icon: DoorOpenIcon,
+        details: '/front-door'
     },
 ]
   
