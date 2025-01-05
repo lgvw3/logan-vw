@@ -28,15 +28,14 @@ export default function Header() {
             <div className="container mx-auto px-4">
                 <div className="flex h-16 items-center justify-between">
                     <Link 
-                        href={pathname.startsWith('/projects') ? '/' : "#top"} 
+                        href={pathname == '/' ? '#top' : '/'} 
                         className="text-lg md:text-xl font-bold hover:text-primary"
                     >
                         Logan <span className="text-nowrap">Van Wagoner</span>
                     </Link>
                     <Separator orientation="vertical" className="ml-2 md:hidden" />
                     {
-                        pathname.startsWith('/projects') ? null
-                        :
+                        pathname == '/' ?
                         <nav className="flex">
                             <Button variant="ghost" asChild>
                                 <Link 
@@ -49,6 +48,7 @@ export default function Header() {
                                 >Contact</Link>
                             </Button>
                         </nav>
+                        : null
                     }
                 </div>
             </div>

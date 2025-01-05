@@ -36,9 +36,9 @@ export default function HeroSection() {
                 </p>
                 <div className="flex gap-4 justify-center">
                     <Button size="lg" asChild>
-                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <Link href="/resume">
                             View Resume
-                        </a>
+                        </Link>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
                         <Link href="#projects">
