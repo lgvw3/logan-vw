@@ -12,6 +12,7 @@ import Image from "next/image"
 import { Brain, Car, DollarSignIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./ui/button"
+import Link from "next/link"
   
 const projects = [
     {
@@ -22,7 +23,8 @@ const projects = [
         icon: Car,
         featured: true,
         video: '/drive-vid.mov?height=300&width=400',
-        link: 'https://github.com/lgvw3/CarGOSPACE'
+        link: 'https://github.com/lgvw3/CarGOSPACE',
+        details: '/self-driving-car'
     },
     {
         title: "1st Q",
@@ -30,14 +32,16 @@ const projects = [
         image: "/1st-q.png?height=200&width=300",
         technologies: ["OpenAI", "FastAPI", "Nextjs", "MongoDB", "Typescript"],
         icon: Brain,
-        video: '/1st-q-vid.mov'
+        video: '/1st-q-vid.mov',
+        details: '/1st-q'
     },
     {
         title: "Profitability Tool",
         description: "Data pipelines, org trees, and advanced tools for branch profitability management for both branch and compnay leaders.",
         image: "/profitability-shot.png?height=200&width=300",
         technologies: ["Nextjs", "Typescript", "Python", "MongoDB", "Data Pipelines"],
-        icon: DollarSignIcon
+        icon: DollarSignIcon,
+        details: '/profitability-tool'
     },
 ]
   
@@ -108,20 +112,26 @@ export default function ProjectsSection() {
                                         }
                                     </div>
                                 </CardContent>
+                                <CardFooter>
                                 {
                                     project.link && (
-                                        <CardFooter>
-                                            <a 
-                                                className={buttonVariants({variant: 'link'})}
-                                                href={project.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                Repo
-                                            </a>
-                                        </CardFooter>
+                                        <a 
+                                            className={buttonVariants({variant: 'link'})}
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Repo
+                                        </a>
                                     )
                                 }
+                                <Link 
+                                    href={'/projects' + project.details}
+                                    className={buttonVariants({variant: 'default'})}
+                                >
+                                    Details
+                                </Link>
+                                </CardFooter>
                             </Card>
                         ))
                     }
