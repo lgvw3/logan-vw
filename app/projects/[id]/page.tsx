@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   }
 }
 
-export default function Page({ params }: ProjectPageProps) {
+export default function Page({ params }: { params: { id: string } }) {
   const project = projects.find((p) => p.id === params.id)
 
   if (!project) {
