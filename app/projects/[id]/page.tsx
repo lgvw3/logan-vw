@@ -8,10 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { projects } from "@/lib/projects/data"
 
-interface ProjectPageProps {
-  params: {
-    id: string
-  }
+type ProjectPageProps = {
+  params: Promise<{ id: string }>
 }
 
 export async function generateStaticParams() {
@@ -21,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.id === params.id)
+  const project = projects.find(async (p) => p.id === (await params).id)
 
   if (!project) {
     return {
