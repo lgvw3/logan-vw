@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip"
+import Image from "next/image"
 
 export default function HeroSection() {
     return (
@@ -7,7 +9,26 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background -z-10" />
             <div className="container px-4 py-32 mx-auto text-center">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
-                    Hi, I&apos;m <span className=" text-nowrap">Logan Van Wagoner</span>, a full-stack engineer building{" "}
+                    Hi, I&apos;m {" "}
+                    <TooltipProvider delayDuration={0}>
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <span 
+                                    className="text-nowrap underline"
+                                >
+                                        Logan Van Wagoner
+                                    </span>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <Image 
+                                    src='/me.png' 
+                                    alt="A picture of Logan. Wow he is handsome"
+                                    width={300}
+                                    height={400}
+                                />
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>, a full-stack engineer building{" "}
                     <span className="text-primary">AI/ML systems</span> to solve real-world problems.
                 </h1>
                 <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
