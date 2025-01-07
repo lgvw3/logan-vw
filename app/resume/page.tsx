@@ -5,12 +5,17 @@ import { Send } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
+import { useState } from 'react'
 
 export default function Page() {
-    const { messages, input, handleInputChange, submitMessage, status } = useAssistant({
-        api: '/api'
-    })
-
+  const [thread, setThread] = useState<string | undefined>()
+  const { messages, input, handleInputChange, submitMessage, status, threadId } = useAssistant({
+      api: '/api',
+      threadId: thread
+  })
+  if (threadId != thread) {
+    setThread(threadId)
+  }
   const isLoading = status !== 'awaiting_message'
 
   return (
