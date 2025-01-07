@@ -67,5 +67,19 @@ export const projects: Project[] = [
     image: "/front-door.png?height=600&width=800",
     //github: "https://github.com/lgvw3",
   },
+  {
+    id: "family-plates",
+    title: "Family Plates",
+    summary: "Building the family gospel insights and collaboration platform I've always wanted",
+    description: "I had this idea to make like a family Bible of sorts, but allow for real time updating and collaboration, along with a super intuitive and fast UX so that we can record the thoughts we often just text to each other that get lost after that.",
+    technologies: ["Nextjs", "MongoDB", "Search Optimization", "Real Time", "Data Preprocessing"],
+    features: [
+      "Super fast and intuitive search",
+      "Easy to make annotations",
+      "Genuinely enjoyable UI for reading scriptures",
+    ],
+    image: "/family-plates.png?height=600&width=800",
+    github: "https://github.com/lgvw3/familyplates",
+  },
 ]
 

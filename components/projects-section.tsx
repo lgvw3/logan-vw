@@ -9,7 +9,7 @@ import {
   } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import { Brain, Car, DollarSignIcon, DoorOpenIcon } from 'lucide-react'
+import { BookMarkedIcon, Brain, Car, DollarSignIcon, DoorOpenIcon } from 'lucide-react'
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./ui/button"
 import Link from "next/link"
@@ -50,6 +50,16 @@ const projects = [
         technologies: ["Nextjs", "Typescript", "MongoDB", "Leadership Collaboration"],
         icon: DoorOpenIcon,
         details: '/front-door'
+    },
+    {
+        title: "Family Plates",
+        description: "A project for sharing insights and collaborating in real time about Gospel topics",
+        image: "/family-plates.png?height=200&width=300",
+        video: '/family-plates.mov',
+        technologies: ["Nextjs", "Typescript", "MongoDB", "Search Optimization", "Real Time Collaboration"],
+        icon: BookMarkedIcon,
+        link: 'https://github.com/lgvw3/familyplates',
+        details: '/family-plates'
     },
 ]
   

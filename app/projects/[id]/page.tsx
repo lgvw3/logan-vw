@@ -118,10 +118,10 @@ export default async function Page({params}: {
             <CardContent className="space-y-4">
               {project.github && (
                 <Button asChild className="w-full">
-                  <Link href={project.github}>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     View Source Code
-                  </Link>
+                  </a>
                 </Button>
               )}
               {project.demo && (
