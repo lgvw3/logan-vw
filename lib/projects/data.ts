@@ -8,7 +8,7 @@ export const projects: Project[] = [
     description: "Using reinforcement learning to navigate a 2d road environments in Unity. I have been using curriculum training to advanced the agents ability to handle difficult tasks. Currently I have trained the agent successfully with a number of scenes. My next steps are to code the training algorithms rather than use ML Agents.",
     technologies: ["Python", "TensorFlow", "Unity ML-Agents", "PyTorch", "C#"],
     features: [
-      "Implemented curriculum learning for soft curve navigation",
+      "Implemented curriculum learning for basic navigation",
       "Trained using Unity ML-Agents with progressive difficulty",
       "Analyzed performance with TensorBoard visualizations",
       "Integrated real-time visualization tools"
