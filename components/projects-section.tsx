@@ -37,7 +37,7 @@ const projects = [
     },
     {
         title: "Profitability Tool",
-        description: "Data pipelines, org trees, and advanced tools for branch profitability management for both branch and compnay leaders.",
+        description: "Data pipelines, org trees, and advanced tools for branch profitability management for both branch and company leaders.",
         image: "/profitability-shot.png?height=200&width=300",
         technologies: ["Nextjs", "Typescript", "Python", "MongoDB", "Data Pipelines"],
         icon: DollarSignIcon,

@@ -38,7 +38,7 @@ export const projects: Project[] = [
     id: "profitability-tool",
     title: "Profitability Tool",
     summary: "Enabling corporate and branch leaders to lead branches profitability in a way we never could before",
-    description: "This is one of, if not the largest project I've ever built. When I started working here, we had only one way of getting insights into branch performance and profitability, and even that wasn't a complete reporting. So, I built out pipelines from our major 3rd party apps and services, including a pipeline to summarize all accounting data, an org tree, and a guided accountability and budgeting tool. The tool was only part of the equation, I also had to train our sales leaders and their direct reports for several months on how to properly conduct these accountability sessions and to make effective plans, but we are, bit by bit, improving profitability company wide.",
+    description: "This is one of, if not the largest project I've ever built. When I started working here, we had only one way of getting insights into branch performance and profitability, and even that wasn't a complete reporting. So, I built out pipelines from our major 3rd party apps and services, including a pipeline to summarize all accounting data, an org tree, and a guided accountability and budgeting tool. The tool was only part of the equation, I also had to train our sales leaders and their direct reports for several months on how to properly conduct these accountability sessions and to make effective plans, but we are, bit by bit, improving profitability company wide. Now it is helping us save thousands every month! The corresponding productivity tool is also coming online and that has been pretty revealing in some very helpful ways.",
     technologies: ["Nextjs", "Python", "MongoDB", "Data Pipelines", "3rd Party Integrations", "Recharts", "Cron Jobs", "Ubuntu Server Management", "Java"],
     features: [
       "Well architected data pipelines, started to get a lot better after v2 and v3",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     id: "family-plates",
     title: "Family Plates",
     summary: "Building the family gospel insights and collaboration platform I've always wanted",
-    description: "I had this idea to make like a family Bible of sorts, but allow for real time updating and collaboration, along with a super intuitive and fast UX so that we can record the thoughts we often just text to each other that get lost after that.",
+    description: "I had this idea to make like a family Bible of sorts, but allow for real time updating and collaboration, along with a super intuitive and fast UX so that we can record the thoughts we often just text to each other that get lost after that. Now my family is using it and so far we are genuinely enjoying the conversations and the experience!",
     technologies: ["Nextjs", "MongoDB", "Search Optimization", "Real Time", "Data Preprocessing"],
     features: [
       "Super fast and intuitive search",
