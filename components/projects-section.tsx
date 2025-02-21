@@ -19,7 +19,7 @@ const projects = [
         title: "Self-Driving Car Simulator",
         description: "Teaching myself more deep learning concepts for autonomous vehicle navigation using simulated computer vision and reinforcement learning.",
         image: "/self-drive.png?height=300&width=400",
-        technologies: ["Unity", "Python", "ML Agents", "PyTorch", "C#"],
+        technologies: ["Unity", "Python", "ML Agents", "PyTorch", "C#", "Path Finding"],
         icon: Car,
         featured: true,
         video: '/drive-vid.mov?height=300&width=400',
@@ -30,7 +30,7 @@ const projects = [
         title: "1st Q",
         description: "Agentic workflows for guiding LOs to choosing the best product for their clients and getting them qualifed.",
         image: "/1st-q.png?height=200&width=300",
-        technologies: ["OpenAI", "FastAPI", "Nextjs", "MongoDB", "Typescript"],
+        technologies: ["OpenAI", "FastAPI", "Nextjs", "MongoDB", "Typescript", "Linear Programming"],
         icon: Brain,
         video: '/1st-q-vid.mov',
         details: '/1st-q'

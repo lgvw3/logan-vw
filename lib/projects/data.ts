@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "self-driving-car",
     title: "Self-Driving Car Project",
     summary: "An autonomous vehicle simulation using reinforcement learning in Unity",
-    description: "Using reinforcement learning to navigate a 2d road environments in Unity. I have been using curriculum training to advanced the agents ability to handle difficult tasks. Currently I have trained the agent successfully with a number of scenes. My next steps are to code the training algorithms rather than use ML Agents.",
-    technologies: ["Python", "TensorFlow", "Unity ML-Agents", "PyTorch", "C#"],
+    description: "Using reinforcement learning to navigate a 2d road environments in Unity. I have been using curriculum training to advanced the agents ability to handle difficult tasks. I implemented a custom dynamic graph generator and A* path finding algorthim for nav data. This sensor data, paired with raycasts that simulate camera seeing the percentage of road within it's line of \"sight\" are enabling it to reach the moving destination target. Currently I have trained the agent successfully with a number of scenes. I want to stablize its performance, some adjustments to the agent, and how the scenes move mostly, and then my next steps are to code the training algorithms rather than use ML Agents.",
+    technologies: ["Python", "TensorFlow", "Unity ML-Agents", "PyTorch", "C#", "Path Finding"],
     features: [
       "Implemented curriculum learning for basic navigation",
       "Trained using Unity ML-Agents with progressive difficulty",
@@ -21,8 +21,8 @@ export const projects: Project[] = [
     id: "1st-q",
     title: "1st Q",
     summary: "Powerful AI tools to advance a green loan officer to the level of the most experienced in the nation",
-    description: "Built out an agentic workflow to handle a number of adminstrative and operations tasks, relieving our back office staff. But, more excitingly, enabling originators and processors the ability to quickly qualify and borrower based on their info and our investor guidelines, and not only that but find strategies to make the deal work most advantageously for the borrower whether thats restructuring debt, loan terms, or better product selection.",
-    technologies: ["Nextjs", "Python", "MongoDB", "FastAPI", "OpenAI Assistants"],
+    description: "Built out an agentic workflow to handle a number of adminstrative and operations tasks, relieving our back office staff of ~75% of their usual queries to respond to. But, more excitingly, enabling originators and processors the ability to quickly qualify and borrower based on their info and our investor guidelines, and not only that but find strategies to make the deal work most advantageously for the borrower whether thats restructuring debt, loan terms, or better product selection.",
+    technologies: ["Nextjs", "Python", "MongoDB", "FastAPI", "OpenAI Assistants", "Linear Programming"],
     features: [
       "Context-aware conversation handling",
       "Insightful UI streaming",
