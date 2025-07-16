@@ -9,15 +9,16 @@ import { usePathname } from "next/navigation"
 
 export default function Header() {
     const pathname = usePathname()
-    const [isScrolled, setIsScrolled] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(pathname == '/resume')
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 0)
+            setIsScrolled(pathname == '/resume' || window.scrollY > 0)
         }
 
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
